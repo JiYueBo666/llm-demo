@@ -19,11 +19,11 @@ class BaseRules(ABC):
         pass
 
     @abstractmethod
-    def check_rules(self):#所有子类需要实现这个方法
+    def check_rules(self):
         pass
 
 
-class IntentRules(BaseRules):  # 定义子类
+class IntentRules(BaseRules): 
     def __init__(self) -> None:
         '''
         意图识别的模块。rule based。
